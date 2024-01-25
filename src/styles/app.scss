@@ -1,0 +1,23 @@
+.scroll {
+  &Y {
+    @apply overflow-x-hidden overflow-y-scroll;
+
+    &::-webkit-scrollbar {
+      @apply w-1 cursor-pointer;
+    }
+    &::-webkit-scrollbar-thumb {
+      @apply bg-gray-400;
+
+      &:hover {
+        @apply bg-gray-200;
+      }
+    }
+  }
+}
+
+.containerX {
+  max-width: 1028px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
